@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind ws</title>
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css style -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- cloudflare animation and fonts cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- aos animation cdn -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="min-h-screen bg-black bg-center bg-cover px-28 py-5 relative">
+    <!-- navv -->
+    <nav id="Home" class="bg-transparent py-4 shadow-lg">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-white"><span class="text-orange-500 text-5xl">Car </span>Rental</a>
+        <ul class="flex items-center space-x-4">
+          <li class="hidden md:block"><a href="#Home"
+              class="text-gray-300 hover:text-orange-500 transition duration-300 ease-in-out">Home</a></li>
+          <li class="hidden md:block"><a href="#about"
+              class="text-gray-300 hover:text-orange-500 transition duration-300 ease-in-out">About</a></li>
+          <li class="hidden md:block"><a href="#contact"
+              class="text-gray-300 hover:text-orange-500 transition duration-300 ease-in-out">Contact</a></li>
+          <li class="hidden md:block"><a href="#car"
+              class="text-gray-300 hover:text-orange-500 transition duration-300 ease-in-out">Cars</a></li>
+            <button id="signUp"
+              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+              Sign Up
+            </button>
+          </li>
+          <li class="md:hidden">
+            <button
+              class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+              Menu
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- homee -->
+    <div data-aos="flip-left" class="text-gray-300 mt-40 max-w-xl">
+      <h1 id="head" class="text-6xl font-semibold leading-normal">Car Rental<br>
+        Delivery in <span class="font-light">30 mins</span>
+      </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum, omnis ex eum architecto repellendus
+        provident totam repellat illum facere, laboriosam quo perferendis! Consequatur nisi soluta reiciendis beatae, ab
+        eveniet!</p>
+      <div class="mt-10">
+        <a class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out"
+          href="">Book Now</a>
+      </div>
+    </div>
+    <img id="audi" class="w-full xl:w-1/2 xl:absolute bottom-0 right-10" src="./images/car2.jpg" alt="">
+  </div>
+  <!-- carz -->
+  <div id="car" class="w-full bg-gray-100">
+
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2 text-center mt-5"><span class="font-semibold text-5xl text-orange-500">Car
+          Segments</span>
+      </div>
+      <p class="text-black text-base text-center mt-5">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatem quaerat dolorum, minima voluptatum
+        praesentium ea temporibus officia, reiciendis consequuntur velit vitae accusantium voluptas omnis dolores. Quod
+        neque omnis quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur fuga at
+        recusandae, officia laborum accusamus eveniet consequuntur architecto dolores !
+      </p>
+    </div>
+    <section id="carType">
+      <div class="flex flex-col md:flex-row ms-[6%] mt-[2rem]">
+        <div id="web" class="rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+          <button1 id="suv"
+            class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out block  text-white absolute md:p-[1rem] left-[29%] text-[1.2rem] rounded-full">
+            $360</button1>
+          <button2
+            class="bg-white hover:bg-orange-700 absolute rounded-3xl bg-orange-500 md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem] cursor-pointer">
+            SUV CARS</button2>
+          <img src="./images/img1.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]">
+        </div>
+        <div id="web" class="rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+          <button1
+            class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out block  text-white absolute md:p-[1rem] left-[59%] text-[1.2rem] rounded-full">
+            $340</button1>
+          <button2
+            class="bg-white hover:bg-orange-700 absolute rounded-3xl bg-orange-500 md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem] cursor-pointer">
+            HATCHBACK CARS</button2>
+          <img src="./images/img2.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]">
+        </div>
+        <div id="web" class="rounded-3xl md:w-[55vh] h-[40vh] me-[2rem] mx-5">
+          <button1 id="sedan"
+            class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out block  text-white absolute md:p-[1rem] left-[89.5%] text-[1.2rem] rounded-full">
+            $640</button1>
+          <button2
+            class="bg-white hover:bg-orange-700 absolute rounded-3xl bg-orange-500 md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem] cursor-pointer">
+            SEDAN CARS</button2>
+          <img src="./images/img3.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]">
+        </div>
+      </div>
+    </section><br>
+    <div class="more mt-5 mb-10 text-center">
+      <a class="more1 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out"
+        href="">More</a>
+    </div>
+    <section id="carType">
+      <div class="flex flex-col md:flex-row ms-[6%] mt-[2rem]">
+        <div id="web" class="rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+          <button2
+            class="bg-white hover:bg-orange-700 absolute rounded-3xl bg-orange-500 md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem] cursor-pointer">
+            BUDGET CARS</button2>
+          <img src="./images/budget.JPG" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]">
+        </div>
+        <div id="web" class="rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+          <button2
+            class="bg-white hover:bg-orange-700 absolute rounded-3xl bg-orange-500 md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem] cursor-pointer">
+            PREMIUM CARS</button2>
+          <img src="./images/premium.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]">
+        </div>
+        <div id="web" class="rounded-3xl md:w-[55vh] h-[40vh] me-[2rem] mx-5">
+          <button2
+            class="bg-white hover:bg-orange-700 absolute rounded-3xl bg-orange-500 md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem] cursor-pointer">
+            LUXURY CARS</button2>
+          <img src="./images/luxury.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]">
+        </div>
+      </div>
+    </section>
+    <div class="more mt-10 text-center">
+      <a class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out"
+        href="">More</a>
+    </div>
+  </div>
+  <!-- features -->
+  <div id="features" class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-orange-500 text-center mb-8">Why Choose Us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex items-center justify-center w-16 h-16 mb-4 bg-blue-500 rounded-full">
+            <i class="fas fa-car text-white text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900">Wide Selection of Vehicles</h3>
+          <p class="mt-2 text-gray-600">Choose from a wide range of vehicles to suit your needs, from compact cars to luxury SUVs.</p>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex items-center justify-center w-16 h-16 mb-4 bg-green-500 rounded-full">
+            <i class="fas fa-calendar-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900">Flexible Rental Plans</h3>
+          <p class="mt-2 text-gray-600">We offer flexible rental plans that cater to short-term and long-term needs.</p>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex items-center justify-center w-16 h-16 mb-4 bg-red-500 rounded-full">
+            <i class="fas fa-headset text-white text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900">24/7 Customer Support</h3>
+          <p class="mt-2 text-gray-600">Our dedicated team is available around the clock to assist you with any queries.</p>
+        </div>
+  
+        <!-- Feature 4 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex items-center justify-center w-16 h-16 mb-4 bg-yellow-500 rounded-full">
+            <i class="fas fa-dollar-sign text-white text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900">Affordable Pricing</h3>
+          <p class="mt-2 text-gray-600">Enjoy competitive rates and exclusive discounts on all vehicle rentals.</p>
+        </div>
+  
+        <!-- Feature 5 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex items-center justify-center w-16 h-16 mb-4 bg-purple-500 rounded-full">
+            <i class="fas fa-laptop text-white text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900">Easy Online Booking</h3>
+          <p class="mt-2 text-gray-600">Book your rental car easily through our user-friendly online platform.</p>
+        </div>
+  
+        <!-- Feature 6 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="flex items-center justify-center w-16 h-16 mb-4 bg-indigo-500 rounded-full">
+            <i class="fas fa-car-side text-white text-2xl"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900">Well-Maintained Fleet</h3>
+          <p class="mt-2 text-gray-600">Our vehicles are regularly serviced and well-maintained for your safety and comfort.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- aboutt -->
+  <div id="about" class="about bg-black px-28 py-5 relative">
+    <img id="audi" data-aos="fade-left" class="xl:w-1/2 xl:absolute bottom-12 right-10" src="./images/car1.jpg" alt="">
+    <div class="text-gray-300 mt-20 max-w-xl">
+      <h1 class="text-6xl font-semibold leading-normal text-orange-500">About us<br>
+      </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum, omnis ex eum architecto repellendus
+        provident totam repellat illum facere, laboriosam quo perferendis! Consequatur nisi soluta reiciendis beatae, ab
+        eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ipsam iusto inventore? Laborum laudantium hic molestias. Possimus dignissimos debitis exercitationem, consequatur at dolor est labore laudantium illo impedit architecto voluptates.</p>
+      <div class="mt-10">
+        <a class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-3xl transition duration-300 ease-in-out"
+          href="">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <!-- testimoies -->
+  <div class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-extrabold text-orange-500 text-center mb-8">What Our Customers Say</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img class="w-20 h-20 rounded-full" src="/images/customer1.jpg" alt="Customer 1">
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-gray-900">Shone Doe</h3>
+              <p class="text-gray-500">Business Traveler</p>
+            </div>
+          </div>
+          <p class="text-gray-700">"The rental process was smooth and hassle-free. The car was in excellent condition, and the service was top-notch."</p>
+        </div>
+  
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img class="w-20 h-20 rounded-full" src="/images/customer2.jpg" alt="Customer 2">
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-gray-900">Jane Smith</h3>
+              <p class="text-gray-500">Vacationer</p>
+            </div>
+          </div>
+          <p class="text-gray-700">"I had a great experience with this rental company. The prices were reasonable, and the staff was friendly and helpful."</p>
+        </div>
+  
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img class="w-20 h-20 rounded-full" src="/images/customer3.jpg" alt="Customer 3">
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-gray-900">Mike Johnson</h3>
+              <p class="text-gray-500">Frequent Renter</p>
+            </div>
+          </div>
+          <p class="text-gray-700">"I always rent from here when I'm in town. The cars are reliable, and the customer service is exceptional."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact -->
+<div id="contact" class="bg-gray-100 py-8">
+  <div data-aos="zoom-in-down" class="max-w-lg mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold text-orange-500 text-center mb-6">Contact Us</h2>
+    <div class="bg-orange-500 text-white p-6 rounded-lg shadow-lg">
+      <!-- Contact Information -->
+      <div class="mb-6 text-center">
+        <p class="text-sm">Feel free to reach out to us directly:</p>
+        <div class="mt-4 space-y-3">
+          <div class="flex items-center justify-center">
+            <i class="fas fa-phone-alt text-white text-lg mr-3"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <i class="fas fa-envelope text-white text-lg mr-3"></i>
+            <p>info@rentalcarcompany.com</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <i class="fas fa-map-marker-alt text-white text-lg mr-3"></i>
+            <p>1234 Car Rental Blvd, City, State</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 text-sm text-gray-900 border-none rounded-md shadow-sm focus:ring-2 focus:ring-white" required>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 text-sm text-gray-900 border-none rounded-md shadow-sm focus:ring-2 focus:ring-white" required>
+        </div>
+        <div>
+          <textarea id="message" name="message" rows="3" placeholder="Your Message" class="w-full p-3 text-sm text-gray-900 border-none rounded-md shadow-sm focus:ring-2 focus:ring-white" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="w-full bg-white text-orange-500 py-3 px-4 rounded-md shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- footerr -->
+<footer class="bg-black text-grey-100 py-6">
+  <div class="max-w-md mx-auto text-center">
+    <!-- Logo or Brand Name -->
+    <div class="mb-4">
+      <h2 class="text-xl font-bold text-white">Rental Car Co.</h2>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="space-y-2 mb-4 text-white">
+      <a href="#Home" class="block text-sm hover:underline hover:text-orange-500">Home</a>
+      <a href="#about" class="block text-sm hover:underline hover:text-orange-500">About Us</a>
+      <a href="#features" class="block text-sm hover:underline hover:text-orange-500">Services</a>
+      <a href="#contact" class="block text-sm hover:underline hover:text-orange-500">Contact</a>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="flex justify-center space-x-4 mb-4">
+      <a href="#" class="text-white hover:text-orange-500">
+        <i class="fab fa-facebook-f text-lg"></i>
+      </a>
+      <a href="#" class="text-white hover:text-orange-500">
+        <i class="fab fa-twitter text-lg"></i>
+      </a>
+      <a href="#" class="text-white hover:text-orange-500">
+        <i class="fab fa-instagram text-lg"></i>
+      </a>
+      <a href="#" class="text-white hover:text-orange-500">
+        <i class="fab fa-linkedin-in text-lg"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-xs text-white">&copy; 2024 Rental Car Co. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</html>
